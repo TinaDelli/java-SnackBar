@@ -29,4 +29,17 @@ public class Customer
     {
         return cash; 
     }
+    public void setCash(double cash)
+    {
+        this.cash = cash;
+    }
+    public void addCash(double cash, double newCash)
+    {
+        this.cash = cash + newCash;
+    }
+    public void spendCash(double cash, double spentCash)
+    {
+        this.cash= cash - spentCash;
+    }
+
 }

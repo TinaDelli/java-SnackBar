@@ -59,9 +59,18 @@ public class Snack {
     {
         return quantity;
     }
-    public void setQuantity(int quantity)
+    public void addQuantity(int quantity, int newQuantity)
     {
-        this.quantity = quantity;
+        this.quantity = quantity + newQuantity;
+    }
+
+    public void buySnack(int quantity, int buyQuantity )
+    {
+        this.quantity = quantity - buyQuantity;
+    }
+    public void totalCost(double cost, int quantity)
+    {
+        this.cost = quantity * cost; 
     }
 
     @Override
