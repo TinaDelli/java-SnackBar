@@ -62,6 +62,19 @@ public class Main
         System.out.println(c2.getName() + " Now has $ " + c2.getCash() + " left");
         s3.buySnack(s3.getQuantity(), 3);
         System.out.println(s3.getName() + " has " + s3.getQuantity() + " in stock now");
+        System.out.println();
+
+        System.out.println("****In Stock****");
+        s1.totalCost(s1.getCost(), s1.getQuantity());
+        s2.totalCost(s2.getCost(), s2.getQuantity());
+        s3.totalCost(s3.getCost(), s3.getQuantity());
+        s4.totalCost(s4.getCost(), s4.getQuantity());
+        s5.totalCost(s5.getCost(), s5.getQuantity());
+        System.out.println("Name : " + s1.getName() + " Quantity: " + s1.getQuantity() + " Total Value: " + s1.getCost());
+        System.out.println("Name : " + s2.getName() + " Quantity: " + s2.getQuantity() + " Total Value: " + s2.getCost());
+        System.out.println("Name : " + s3.getName() + " Quantity: " + s3.getQuantity() + " Total Value: " + s3.getCost());
+        System.out.println("Name : " + s4.getName() + " Quantity: " + s4.getQuantity() + " Total Value: " + s4.getCost());
+        System.out.println("Name : " + s5.getName() + " Quantity: " + s5.getQuantity() + " Total Value: " + s5.getCost());
 
     }
 
